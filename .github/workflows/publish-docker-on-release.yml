@@ -1,4 +1,4 @@
-name: Publish Docker
+name: Publish Bandersnatch to Docker on Release "$GITHUB_REF"
 on:
   release:
     types: [created]
@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Publish to Registry
+    - name: Publish to Registry "$GITHUB_REF"
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: sanketdg/github-release-test
+        name: pypa/bandersnatch
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
