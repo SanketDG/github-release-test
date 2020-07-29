@@ -1,6 +1,6 @@
 ---
-name: Tracking issue
-about: Use this template for tracking new features.
+name: Learner Checkpoint Progress
+about: Use this template to create your own tracking issue for learning Clojure!
 title: "[USERNAME] Checkpoint Progress"
 labels: learner
 ---
